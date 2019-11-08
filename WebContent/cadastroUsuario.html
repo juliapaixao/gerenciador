@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<fieldset style="width: 70%; background-color: #ffe4e1;">
+<form action="/gerenciador/novoUsuario" method="post"> 
+			
+				<label for="nome"> Nome Completo:</label> 
+					<input type="text" name="nome" id="nome" placeholder="Digite seu nome"  pattern="[A-Za-z]+$" style="width: 65%;" required autofocus> <br> <br>
+				
+				<label for="data"> Data de nascimento: </label> 
+					<input type="date" name="data" id="data"> <br> <br>
+				
+				<label for="cpf"> CPF: </label> 
+					<input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" style="width: 65%;" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" > <br> <br>
+			
+			<!--
+				<label for="rg"> N° de documento de identificação: </label> 
+					<input type="text" name="rg" id="rg" placeholder="Digite o n° do documento" style="width: 65%;" pattern=" " > <br> <br>
+				
+				<label for="tipodoc"> Tipo de Documento: </label> 
+					<input type="text" name="tipodoc" id="tipodoc" placeholder="Digite o tipo do documento" style="width: 65%;" > <br> <br>
+				
+				<label for="orgao"> Órgão Expedidor: </label> 
+					<input type="text" name="orgao" id="orgao" placeholder="Digite o Órgão Expedidor" style="width: 65%;" > <br> <br>
+				
+				<label for="dataemissao"> Data de Emissão do Documento: </label> 
+					<input type="date" name="dataemissao" id="dataemissao"> <br> <br>  -->
+				
+				<label for="sexo">Sexo</label>
+					<input type="radio" name="sexo" id="m">M
+					<input type="radio" name="sexo" id="f">F
+					<input type="radio" name="sexo" id="outro">Outro<br> <br>
+			
+			<!--	
+				<label for="nomepai"> Nome do Pai:</label> 
+					<input type="text" name="nomepai" id="nomepai" placeholder="Digite o nome do seu pai"  pattern="[A-Za-z]+$" style="width: 65%;"> <br> <br>
+				
+				<label for="nomemae"> Nome da Mãe:</label> 
+					<input type="text" name="nomemae" id="nomemae" placeholder="Digite o nome da sua mãe"  pattern="[A-Za-z]+$" style="width: 65%;"> <br> <br>
+				
+				<label for="estadocivil"> Estado Civil:</label> 
+					<input type="text" name="estadocivil" id="estadocivil" placeholder="Digite seu estado civil"  pattern="[A-Za-z]+$" style="width: 65%;"> <br> <br>-->
+					
+				<input type="submit" value="Salvar">
+				
+				</form>
+				</fieldset>
+
+
+
+</body>
+</html>
