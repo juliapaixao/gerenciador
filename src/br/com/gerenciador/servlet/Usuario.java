@@ -1,10 +1,12 @@
 package br.com.gerenciador.servlet;
 
+import java.util.Date;
+
 public class Usuario {
   
   private Integer id;
   private String nome;
-  private String cpf;
+  private Date dataNascimento = new Date();
   
   
   
@@ -20,14 +22,11 @@ public class Usuario {
   public void setNome(String nome) {
     this.nome = nome;
   }
-  public String getCpf() {
-    return cpf;
+  public Date getDataNascimento() {
+    return dataNascimento;
   }
-  public void setCpf(String cpf) {
-    this.cpf = cpf;
+  public void setDataNascimento(Date dataNascimento) {
+    this.dataNascimento = dataNascimento;
   }
   
-
-  
- 
 }
